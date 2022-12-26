@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Green: #5ba601;
+
+    --green-transparent: rgba(91, 166, 1, 1);
+
+    --blue: #0f1c3e;
+
+    --blue-transparent: rgba(15, 28, 62, 1);
+
+    --grey-1: #f3f3f3;
+
+    --grey-2: #f2f3f5;
+
+    --white: #ffffff;
+
+    --black: #000000;
+}
+li {
+    list-style-type: none;
+}
+hr {
+    color: var(--white);
+}
+/************ TOP INFO BAR STYLES **********/
+.top-info-bar-wrapper {
+    background-color: var(--Green);
+}
+.top-info-bar {
+    margin-bottom: 0;
+    padding: 6px 0;
+}
+.top-info-bar li a {
+    text-decoration: none;
+    color: var(--white);
+}
+.top-info-bar li {
+    color: var(--white);
+}
+.top-info-left li a {
+    padding-right: 14px;
+}
+.top-info-right li {
+    padding-left: 12px;
+}
+/*********** NAV BAR STYLES ************/
+.navbar {
+    background-color: rgba(15, 28, 62, 0.6);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding: 24px 0;
+}
+.navbar-nav li a {
+    color: var(--white);
+}
+.navbar-nav li a:hover {
+    color: var(--Green);
+}
+.navbar-nav .nav-item .active {
+    color: var(--green) !important;
+}
+.dropdown-menu .dropdown-item {
+    color: var(--black);
+}
+.navbar-toggler {
+    background-color: var(--Green);
+}
+/************ HERO IMAGE STYLE ***********/
+.hero-img-wrapper {
+    position: relative;
+}
+.hero-img-overlay-text-wrapper {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+}
+.psuedo-circle {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+.psuedo-circle:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 60px;
+    right: 150%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    position: absolute;
+}
+.psuedo-circle:before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 60px;
+    left: 150%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    position: absolute;
+}
+/************* SEARCH SECTION WRAPPER *************/
+.search-filter-section-wrapper {
+    background-color: var(--grey-1);
+    padding: 15px 0;
+}
+
+
+/************** BEST HOUSE SECTION STYLE ***************/
+.best-houses-upper-text-wrapper {
+    text-align: center;
+}
+.best-houses-upper-text-wrapper p {
+    margin-bottom: 0;
+    color: var(--Green);
+}
+.best-houses-upper-text-wrapper h1 {
+    font-weight: 800;
+}
+.best-house-card-wrapper {
+    position: relative;
+    margin: 30px 0 12px 0;
+}
+.best-house-card-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+	background: linear-gradient(0deg, rgba(0,0,0,0.5382528011204482) 16%, rgba(0,0,0,0) 25%);
+}
+.best-house-card-wrapper img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.best-house-card-overlay-wrapper .card-btn {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    z-index: 3;
+}
+.best-house-card-overlay-wrapper .card-btn a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 2px 15px;
+}
+.best-house-card-overlay-wrapper .card-btn a:first-child {
+    background-color: var(--Green) !important;
+}
+.user-info-wrapper {
+    padding: 0 15px;
+    position: absolute;
+    width: 100%;
+    bottom: 6%;
+    z-index: 1;
+    color: var(--white);
+}
+.user-info-inner img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.user-info-inner .user-info p {
+    margin-bottom: 0;
+}
+/*************** SERVICES SECTION STYLES ****************/
+.services-section-wrapper {
+    background-color: var(--grey-1);
+}
+.service {
+    text-align: center;
+    background-color: rgba(91, 166, 1, 0.95);
+    color: var(--white);
+    padding: 80px 50px;
+}
+.service-1 {
+    position: relative;
+}
+.service-1::after {
+    content: "\e995";
+    font-family: 'icomoon';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    left: -16%;
+    font-size: 180px;
+    color: var(--grey-2);
+    opacity: 0.2;
+}
+.service-2 {
+    background-color: rgba(15, 28, 62, 0.95) !important;
+    position: relative;
+}
+.service-2::after {
+    content: "\e976";
+    font-family: 'icomoon';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    left: -16%;
+    font-size: 180px;
+    color: var(--grey-2);
+    opacity: 0.2;
+}
+.service-3 {
+    position: relative;
+}
+.service-3::after {
+    content: "\e972";
+    font-family: 'icomoon';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    left: -16%;
+    font-size: 180px;
+    color: var(--grey-2);
+    opacity: 0.2;
+}
+.service p {
+    margin-bottom: 0;
+}
+.service span {
+    font-size: 80px;
+}
+/*********** OUR PROPERIES SECTION STYLE ***********/
+.our-properies-upper-text-wrapper {
+    text-align: center;
+}
+.our-properies-upper-text-wrapper p {
+    margin-bottom: 0;
+    color: var(--Green);
+}
+.our-properies-upper-text-wrapper h1 {
+    font-weight: 800;
+}
+.appartments-cards {
+    position: relative;
+    box-shadow: 1px 1px 3px lightgray, -1px -1px 3px lightgray;
+    margin: 20px 0 0 0;
+}
+/* .appartments-cards::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: rgb(0, 0, 0);
+	background: linear-gradient(0deg, rgba(0,0,0,0.5382528011204482) 8%, rgba(0,0,0,0) 25%);
+} */
+.appartment-cards-overlay {
+    position: absolute;
+    width: 100%;
+    top: 44%;
+    color: var(--white);
+    padding: 0 12px;
+    z-index: 1;
+}
+.appartment-seller-info-inner img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.app-seller-info p {
+    margin-bottom: 0;
+}
+.appartment-card-caption {
+    padding: 12px 0 0 15px;
+}
+/*************** CLIENT TESTOMINAL SECTION STYLES ****************/
+.client-testominal-section-wrapper {
+    position: relative;
+}
+.client-testominal-overlay-wrapper {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(15, 28, 62, 0.97);
+}
+.our-testominal-upper-text {
+    text-align: center;
+    color: var(--white);
+}
+.our-testominal-upper-text p:first-child {
+    color: var(--Green) !important;
+    margin-bottom: 0;
+}
+.our-testominal-upper-text h1 {
+    font-weight: 800;
+}
+.client-card {
+    border: 1px solid whitesmoke;
+    border-radius: 50px 0 50px 0;
+    color: var(--white);
+    margin: 30px 0 12px 0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+}
+.client-card:hover {
+    background-color: var(--Green);
+}
+.client-card img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -70px;
+}
+.client-card h3 {
+    padding: 15px 0 8px 0;
+    margin-bottom: 0;
+}
+.client-card p {
+    margin-bottom: 0;
+}
+.client-card p:nth-child(3) {
+    color: var(--Green) !important;
+}
+.client-rating {
+    margin-top: 8px;
+}
+.client-rating span {
+    padding: 0 3px;
+    color: #fadb2d;
+    font-size: 25px;
+}
+/************ OUR PARTNER-SECTION-STYLES ***********/
+.our-partners-wrapper {
+    background-color: var(--grey-1);
+    padding: 30px 0;
+}
+
+/********* BEST AGENTS SECTION STYLES ************/
+.best-agents-upper-text-wrapper {
+    text-align: center;
+}
+.best-agents-upper-text-wrapper p {
+    color: var(--Green);
+    margin-bottom: 0;
+}
+.best-agents-upper-text-wrapper h1 {
+    font-weight: 800;
+}
+.agent-cards {
+    position: relative;
+    margin: 15px 0 0 0;
+}
+.agent-cards img {
+    width: 100%;
+}
+.agent-card-overlay-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 6%;
+    left: 0;
+    color: var(--white);
+}
+.agent-card-overlay-text span.icon-phone {
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--black) !important;
+}
+.agent-card-overlay-text span.icon-phone:hover{
+    background-color: var(--Green);
+}
+.agent-card-overlay-text h3 {
+    margin-top: 8px;
+}
+.agent-social-links-wrapper {
+    padding: 10px 0;
+}
+.agent-social-links-wrapper span {
+    border: 1px solid var(--white);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 15px;
+}
+/************* POPULAR CATEGORIES SECTION STYLES ***********/
+.popular-categories-section-wrapper {
+    background-color: var(--grey-1);
+}
+.popular-categories-upper-text-wrapper {
+    text-align: center;
+}
+.popular-categories-upper-text-wrapper p {
+    color: var(--Green); 
+    margin-bottom: 0;
+}
+.popular-categories-upper-text-wrapper h1 {
+    font-weight: 800;
+}
+.categories-card {
+    position: relative;
+    margin-top: 30px;
+}
+.categories-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.categories-card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(15, 28, 62, 0.6);
+}
+.categories-card-caption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+}
+.categories-card-caption h3 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.categories-card-caption a {
+    background-color: var(--Green);
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px 12px;
+}
+/*********** NEWS FEED SECTION STYLES ************/
+.news-feed-upper-text-wrapper {
+    text-align: center;
+}
+.news-feed-upper-text-wrapper p {
+    color: var(--Green);
+    margin-bottom: 0;
+}
+.news-feed-upper-text-wrapper h1 {
+    font-weight: 800;
+}
+.news-feed-section-wrapper .row .col-md-4 {
+    margin-top: 18px;
+}
+.card-img-top {
+    height: 241px;
+    object-fit: cover;
+}
+.news-sharing-info p {
+    margin-bottom: 0;
+    margin-bottom: 6px;
+}
+.news-sharing-info p:nth-child(2) {
+    margin-left: 12px;
+}
+.card-body .card-title {
+    font-weight: 800;
+    margin-bottom: 5px !important;
+}
+/************ FOOTER SECTION STYLES ***********/
+.footer {
+    position: relative;
+}
+.footer img {
+    height: 550px;
+}
+.footer-overlay-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(15, 28, 62, 0.97);
+}
+.left-footer {
+    padding-left: 0;
+    margin-top: 70px;
+}
+.left-footer img {
+    width: 100px;
+    height: 60px;
+}
+.left-footer li {
+    margin: 12px 0;
+}
+.left-footer li, .left-footer li a {
+    color: var(--white);
+    text-decoration: none;
+}
+.middle-footer {
+    padding-left: 0;
+    margin-top: 70px;
+    width: 300px;
+}
+.middle-footer li {
+    color: var(--white);
+}
+.right-footer {
+    padding-left: 0;
+    margin-top: 70px;
+}
+.right-footer li {
+    color: var(--white);
+}
+.contact-msg-wrapper input {
+    margin-top: 18px;
+}
+.contact-msg-wrapper input.msg-type-input {
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px;
+    width: 250px;
+    color: var(--white);
+    border: 0.1px solid var(--grey-1);
+    border-radius: 3px 0 0 3px;
+}
+.contact-msg-wrapper input:nth-child(2) {
+    border: none;
+    background-color: var(--Green);
+    color: var(--white);
+    padding: 10px 10px;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid var(--Green);
+}
+.footer-social-links-wrapper a {
+    text-decoration: none;
+    color: var(--white);
+    margin-top: 24px;
+}
+.footer-social-links-wrapper a span {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.lower-footer-wrapper p {
+    color: var(--white);
+    padding: 12px 65px;
+}
+.lower-footer-wrapper p span {
+    font-size: 50px;
+}
+.lower-footer-wrapper p span:hover {
+    color: var(--Green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 991.98px) {
+    .top-info-bar-wrapper ul li a {
+        font-size: 10px;
+    }
+}
+@media (max-width: 767.98px) {
+    .top-info-bar-wrapper {
+        display: none;
+    }
+}
