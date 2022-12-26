@@ -66,6 +66,20 @@ hr {
 .dropdown-menu .dropdown-item {
     color: var(--black);
 }
+.nav-dropdown span {
+    font-size: 12px;
+}
+.right-nav span {
+    color: var(--white);
+}
+.right-nav .btn {
+    background-color: var(--Green);
+    color: var(--white);
+    padding: 8px 18px;
+}
+.right-nav .btn span {
+    font-size: 10px;
+}
 .navbar-toggler {
     background-color: var(--Green);
 }
@@ -75,7 +89,7 @@ hr {
 }
 .hero-img-overlay-text-wrapper {
     position: absolute;
-    width: 40%;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -117,8 +131,30 @@ hr {
     background-color: var(--grey-1);
     padding: 15px 0;
 }
-
-
+.form-check {
+    margin: 0 5px;
+}
+.input-group .form-control {
+    border: none;
+    border-right: 1px solid var(--grey-1);
+}
+.input-group select {
+    border: none;
+    width: 120px;    
+}
+.input-group input:nth-child(3) {
+    background-color: var(--Green);
+    border: none;
+    color: var(--white);
+    padding: 5px 15px;
+}
+.icon-zoom-in {
+    color: var(--Green);
+    margin-left: 15px;
+}
+.btn-link {
+    color: var(--black);
+}
 /************** BEST HOUSE SECTION STYLE ***************/
 .best-houses-upper-text-wrapper {
     text-align: center;
@@ -594,9 +630,19 @@ hr {
     .top-info-bar-wrapper ul li a {
         font-size: 10px;
     }
+    .hero-img-overlay-text-wrapper p {
+        font-size: 12px;
+    }
 }
 @media (max-width: 767.98px) {
     .top-info-bar-wrapper {
         display: none;
+    }
+    .hero-img-overlay-text-wrapper p, .psuedo-circle {
+        display: none;
+    }
+    .hero-img-overlay-text-wrapper h1 {
+        font-size: 25px;
+        margin-top: 50px;
     }
 }
