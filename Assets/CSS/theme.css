@@ -57,12 +57,15 @@ hr {
 .navbar-nav li a {
     color: var(--white);
 }
+.navbar-nav li a.active {
+    color: var(--Green) !important;
+}
 .navbar-nav li a:hover {
     color: var(--Green);
 }
-.navbar-nav .nav-item .active {
+/* .active {
     color: var(--green) !important;
-}
+} */
 .dropdown-menu .dropdown-item {
     color: var(--black);
 }
