@@ -294,6 +294,17 @@ hr {
 .our-properies-upper-text-wrapper h1 {
     font-weight: 800;
 }
+.active-btn button {
+    background-color: var(--grey-1) !important;
+    color: var(--black) !important;
+    padding: 5px 30px;
+    border-radius: 0 !important;
+    margin-top: 12px;
+}
+.our-properies-section-wrapper .active-btn .active {
+    background-color: var(--Green) !important;
+    color: var(--white) !important;
+}
 .appartments-cards {
     position: relative;
     box-shadow: 1px 1px 3px lightgray, -1px -1px 3px lightgray;
@@ -365,6 +376,10 @@ hr {
 }
 .client-card:hover {
     background-color: var(--Green);
+
+}
+.client-card:hover p{
+    color: var(--white) !important;
 }
 .client-card img {
     width: 150px;
@@ -383,6 +398,9 @@ hr {
 }
 .client-card p:nth-child(3) {
     color: var(--Green) !important;
+}
+.client-card:hover p{
+    color: var(--white) !important;
 }
 .client-rating {
     margin-top: 8px;
