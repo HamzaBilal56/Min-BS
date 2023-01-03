@@ -306,28 +306,33 @@ hr {
     color: var(--white) !important;
 }
 .appartments-cards {
-    position: relative;
     box-shadow: 1px 1px 3px lightgray, -1px -1px 3px lightgray;
     margin: 20px 0 0 0;
+    position: relative;
 }
 /* .appartments-cards::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    bottom: 50%;
     transform: translateY(-50%);
     left: 0;
+    bottom: 0;
     background: rgb(0, 0, 0);
 	background: linear-gradient(0deg, rgba(0,0,0,0.5382528011204482) 8%, rgba(0,0,0,0) 25%);
 } */
 .appartment-cards-overlay {
     position: absolute;
     width: 100%;
-    top: 44%;
+    /* height: 100%; */
+    bottom: 50%;
+    left: 0;
     color: var(--white);
     padding: 0 12px;
     z-index: 1;
+}
+.secondary-tab .appartment-card-caption p a {
+    background-color: var(--blue);
 }
 .appartment-seller-info-inner img {
     width: 50px;
@@ -335,11 +340,41 @@ hr {
     border-radius: 50%;
     margin-right: 8px;
 }
+.appartment-specs-inner {
+    padding: 0;
+    text-align: center;
+}
+.appartment-specs-inner li {
+    padding: 0 20px;
+    border-left: 1px solid #222;
+    margin: 10px 0;
+}
+.appartment-specs-inner li:last-child {
+    border-right: 1px solid #222;
+    margin-right: 16px;
+}
 .app-seller-info p {
     margin-bottom: 0;
 }
 .appartment-card-caption {
     padding: 12px 0 0 15px;
+}
+.appartment-card-caption p {
+    margin-bottom: 5px !important;
+}
+.appartment-card-caption p span {
+    color: var(--Green);
+}
+.appartment-card-caption p a {
+    background-color: var(--Green);
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 6px;
+    padding: 2px 8px;
+}
+.appartment-card-caption p:nth-child(4) {
+    color: var(--Green);
+    font-weight: 700;
 }
 /*************** CLIENT TESTOMINAL SECTION STYLES ****************/
 .client-testominal-section-wrapper {
@@ -524,6 +559,10 @@ hr {
 }
 .news-feed-upper-text-wrapper h1 {
     font-weight: 800;
+}
+.news-feed-section-wrapper .card {
+    border: none;
+    box-shadow: 1px 1px 3px lightgray, -1px -1px 3px lightgray;
 }
 .news-feed-section-wrapper .row .col-md-4 {
     margin-top: 18px;
